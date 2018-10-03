@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	
+	<style type="text/css">
+		body{font-family: "Montserrat","Avenir";
+			 background-color: #232323;
+			 margin:0;
+		}
+		.square{
+			background: purple;
+			width:30%;
+			padding-top: 30%;
+			float:left;
+			margin:1.66%;
+			border-radius: 15%;
+			transition: background 0.5s;
+		}
+		#container{
+			max-width:600px;
+			margin:20px auto;
+			text-align: center;
+		}
+		h1{
+			color:white;
+			text-align: center;
+			background: steelblue;
+			margin:0;		
+			font-weight: normal;
+			text-transform: uppercase;
+			line-height: 1.1;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		
+		}
+		
+		#stripe{
+			background: white;
+			height:30px;
+			text-align: center;
+		}
+		.selected{
+			color: white;
+			background: steelblue;
+		}
+		#cd{
+			font-size: 200%;
+		}
+		button{
+			border:none;
+			background: none;
+			font-family:"Montserrat","Avenir";
+			height:100%; 
+			text-transform: uppercase;
+			font-weight: 700;
+			color:steelblue;
+			letter-spacing: 1px;
+			font-size: inherit;
+			transition: all 0.3s;
+			outline: none;
+		}
+		button:hover{
+			color: white;
+			background: steelblue;
+
+		}
+		#message{
+			width:20%;
+			display:inline-block;
+		}
+	</style>
+</head>
+<body>
+<h1>The Great 
+	<br>	
+	<span id="cd">RGB</span>
+	<br>
+	Color Game
+</h1>	
+<div id="stripe">
+	<button id="reset">New Colors</button>	
+	<span id="message"></span>
+	<button class="mode">Easy</button>
+	<button class="selected mode">Hard</button>
+</div>
+<div id="container">
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+</div>
+
+<script type="text/javascript" src="color_game.js"></script>
+</body>
+</html>
